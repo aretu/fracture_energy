@@ -1,7 +1,7 @@
 # Fracture energy
-Data collection including published research data on the topic of fracture energy. I tried to include the broadest number of fracture energy estimates that I could possibly do, from many communities, ranging from laboratory, field geology, modelling and seismology.  
+Data collection including published research data on the topic of fracture energy. In Cocco et al., in prep, we tried to include the broadest number of fracture energy estimates as possible, from many communities, ranging from laboratory, field geology, modelling and seismology.  
 
-It is hosted here because I thought this data collection could benefit from the collaborative nature of Github.
+We hosted our data collection here in Github to benefit from the collaborative nature of this community.
 
 This data is discussed in a review paper (link).
 
