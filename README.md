@@ -68,8 +68,8 @@ type of slip | Name of the type of estimated slip, possibly with the original na
 value (m) | Value of fault slip
 min (m) | Minimum value of fault slip
 max (m) | Maximum value of fault slip
-type of stress drop |
-value (Pa) |
+type of stress drop | Name of the type of estimated stress drop, possibly with the original name used in the publication (e.g., energy-based stress drop)
+value (Pa) | Value of stress drop
 Reference | Reference to the paper where data was first published
 Collection | Reference to a paper with a data collection including the data
 Notes | Notes on the origin of data
