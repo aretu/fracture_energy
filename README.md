@@ -5,10 +5,10 @@ Contributors of this work are (in alphabetical order):
 - Aretusini, S.
 - Cornelio, C.
 - Cocco, M.
-- Spagnuolo, E.
-- Tinti, E.
 - Di Toro, G.
 - Nielsen, S.
+- Spagnuolo, E.
+- Tinti, E.
 
 We hosted our data collection here in Github to benefit from the collaborative nature of this community.
 
