@@ -706,14 +706,6 @@ MTW 8;triaxial;shear fracture;granite;intact;;;G;23000;;;deltau_avg;0.00064;;;;2
 5;triaxial;shear fracture;granite;saw-cut;;;G_IIC;39400;;;deltau;0.00045;;;;80;;86.46;;;Hakami & Stephansson, 1990;;table 1;1;;;
 13;triaxial;shear fracture;granite;intact;;;G_IIC;81200;;;deltau;0.00063;;;;80;;128.96;;;Hakami & Stephansson, 1990;;table 1;1;;;
 10;triaxial;shear fracture;granite;intact;;;G_IIC;77300;;;deltau;0.00067;;;;80;;115.32;;;Hakami & Stephansson, 1990;;table 1;1;;;
-1;uniaxial;shear fracture;shale;intact;;;G_C^S;98;;;deltaU;0.000157;;;;;;6.25;;;Laqueche et al., 1986;;table 6;;;;
-2;uniaxial;shear fracture;shale;intact;;;G_C^S;89;;;deltaU;0.000103;;;;;;8.6;;;Laqueche et al., 1986;;table 6;;;;
-3;uniaxial;shear fracture;shale;intact;;;G_C^S;36;;;deltaU;0.000101;;;;;;3.56;;;Laqueche et al., 1986;;table 6;;;;
-4;uniaxial;shear fracture;shale;intact;;;G_C^S;28;;;deltaU;0.000102;;;;;;2.75;;;Laqueche et al., 1986;;table 6;;;;
-5;uniaxial;shear fracture;shale;intact;;;G_C^S;23;;;deltaU;0.00004;;;;;;5.8;;;Laqueche et al., 1986;;table 6;;;;
-6;uniaxial;shear fracture;shale;intact;;;G_C^S;22.5;;;deltaU;0.000064;;;;;;3.5;;;Laqueche et al., 1986;;table 6;;;;
-7;uniaxial;shear fracture;shale;intact;;;G_C^S;22;;;deltaU;0.000103;;;;;;2.1;;;Laqueche et al., 1986;;table 6;;;;
-8;uniaxial;shear fracture;shale;intact;;;G_C^S;13.5;;;deltaU;0.000135;;;;;;4.92;;;Laqueche et al., 1986;;table 6;;;;
 1;triaxial;shear fracture;granite;intact;;;Wb;77000;;;Dc;0.00196;;;;197;29;;25;;Ohnaka, 2003;;table 1;1;;;
 2;triaxial;shear fracture;granite;intact;;;Wb;105000;;;Dc;0.00248;;;;201;140;;25;;Ohnaka, 2003;;table 1;1;;;
 3;triaxial;shear fracture;granite;intact;;;Wb;100000;;;Dc;0.0021;;;;201;150;;25;;Ohnaka, 2003;;table 1;1;;;
