@@ -1,7 +1,39 @@
 # Fracture energy
 Data collection including published research data on the topic of fracture energy. In Cocco et al., in prep, we tried to include the broadest number of fracture energy estimates as possible, from many communities, ranging from laboratory, field geology, modelling and seismology.  
 
+Contributors of this work are (in alphabetical order):
+- Aretusini, S.
+- Cornelio, C.
+- Cocco, M.
+- Spagnuolo, E.
+- Tinti, E.
+- Di Toro, G.
+- Nielsen, S.
+
 We hosted our data collection here in Github to benefit from the collaborative nature of this community.
+
+The first release of this repository will be published directly to Zotero.
+
+Further releases will be improved also according to the feedback from the community via the Issues to this repository. 
+All contributors acknowledge that at its current state this data collection is not complete and hope to complete it further thanks to the scientific community.
+
+We acknowledge for providing their data:
+Harbord, C.
+Paglialunga, F.
+Scuderi, M.
+Selvadurai, P.
+
+And thank in particular Selvadurai, P. for the support.
+
+# Description of data
+
+The files included in this repository present the estimates of fracture energy divided by scientific community:
+1. Geology: merged_data-geology.csv
+2. Laboratory: merged_data-laboratory.csv
+3. Numerical models: merged_data-models.csv
+4. Seismology: merged_data-seismology.csv
+
+All files above point to another file containing the references: merged_data-references.csv
 
 ## Geology
 Estimates of fracture energy with rock deformation laboratory experiments.
@@ -100,3 +132,11 @@ Reference slip, G' | Reference to the paper where slip and energy density data w
 Collection | Reference to a paper with a data collection including the data
 Notes | Notes on the origin of data
 Type of seismic event | Category of seismic event (e.g. natural, induced, or laboratory)
+
+## References
+Column | Description
+ --- | ---
+Name | Name of the reference
+Title | Title of the referenced publication
+Community | Data file in which the reference is used (e.g., geology, laboratory, models, or seismology) 
+Type | Category of the reference (e.g., Reference, or Collection)
