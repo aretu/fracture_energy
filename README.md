@@ -73,6 +73,7 @@ value (Pa) | Value of stress drop
 Reference | Reference to the paper where data was first published
 Collection | Reference to a paper with a data collection including the data
 Notes | Notes on the origin of data
+Type of model | Category of model (e.g. pseudo-dynamic, or spontaneous-dynamic)
 
 ## Seismology
 Estimates of fracture energy with from seismologic data (natural, induced, and laboratory seismic events).
