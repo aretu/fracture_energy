@@ -85,7 +85,7 @@ peak slip velocity (m/s) | Spontaneous or controlled maximum fault slip velocity
 Reference | Reference to the paper where data was first published
 Collection | Reference to a paper with a data collection including the data
 Notes | Notes on the origin of data
-Group | Group numbering following Cocco et al., in prep.
+Group | Grouping of the experiment type following Cocco et al., in prep.
 
 ## Models
 Estimates of fracture energy with numerical models.
