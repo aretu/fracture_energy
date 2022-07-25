@@ -12,7 +12,7 @@ Contributors of this work are (in alphabetical order):
 
 We hosted our data collection here in Github to benefit from the collaborative nature of this community.
 
-The first release of this repository was published in Zotero (https://doi.org/10.5281/zenodo.6833942).
+The first release of this repository was published in Zenodo (https://doi.org/10.5281/zenodo.6833942).
 
 Further releases will be improved also according to the feedback from the community via the Issues to this repository. 
 All contributors acknowledge that at its current state this data collection is not complete and hope to complete it further thanks to the scientific community.
