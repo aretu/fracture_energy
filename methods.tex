@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{cleveref}
+\usepackage{cite,natbib}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+\geometry{a4paper, portrait, margin=1in}
+\renewcommand{\arraystretch}{2} %more spacing between rows in tabular
+
+\title{Methods for estimation of "fracture energy"}
+\date{July 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Laboratory}
+
+\begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
+\hline
+\textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
+Aben et al., 2020b & \(\displaystyle W_b = G_{nom} \) & & & $=$ \\
+Aben et al., 2020b & \(\displaystyle \Gamma_{off} = 2 \sum_{i=1}^{n} (\rho_{i}^{frac}-\rho_{0}^{frac}) x_i \Gamma_i \) & & CD & $=$ \\
+Aben et al., 2019 & \( \displaystyle G_{off} \approx \frac{1}{2} w \overline{\sigma}_{ij} \Delta S_{ijkl} \overline{\sigma}_{kl} \) & & AWT & $=$ \\
+Aben et al., 2019 & \( \displaystyle G_c=G_{nom} \) & & & $=$ \\
+Beeler et al., 2012 & \( \displaystyle G_e = \frac{1}{2} (\tau_{yield}-\tau_{sliding}) d_* \) & & & $=$ \\
+Beeler et al., 2012 & \( \displaystyle G_e^{min} = \frac{1}{2} k d_*^2 \) & $J/m^2$ & & $=$ \\
+Lockner et al., 1991 & \( \displaystyle G_t = E_f + G \) & & & $=$ \\
+Lockner et al., 1991 & \( \displaystyle G_c = G_{nom} \)& & & $=$ \\
+Lockner et al., 1991 & \( \displaystyle E_f = \tau_f \delta^* \)& & & $=$ \\
+Moore \& Lockner, 1995 & \( \displaystyle G_{II} \) & & & $=$ \\
+Okubo \& Dieterich, 1981 & \( \displaystyle G = \frac{1}{2} (\tau_p - \tau_r) d_r \) & & & $=$ \\
+Okubo \& Dieterich, 1984 & \( \displaystyle G = \frac{1}{2} (\tau_p - \tau_r) d_r \) & & & $=$ \\
+Svetlizky \& Fineberg, 2014 & \( \displaystyle G = \frac{1-\nu^2}{E} f_{II}(C_f) K_{II}^2 = \Gamma \) & & & Gamma \\
+Bayart et al., 2016a & \( \displaystyle G = \frac{1-\nu^2}{E} f_{II}(C_f) K_{II}^2 = \Gamma \) & & & Gamma \\
+Bayart et al., 2018 & \( \displaystyle G = \frac{1-\nu^2}{E} f_{II}(C_f) K_{II}^2 = \Gamma \) & & & Gamma \\
+Bayart et al., 2018 & \( \displaystyle G_{stat} = \Gamma \rightarrow K_{II}^{stat} = \sqrt{4 \mu (1-k^2) \Gamma} = K_c \) & & & not used \\
+Kammer \& McLaskey, 2019 & \( \displaystyle \Gamma = G_{II} = \frac{1-\nu^2}{E} K_{II}^2 f_{II}(C_f)\) & & & Gamma \\
+Ke et al., 2018 & \( \displaystyle G_{II}^d = \Gamma \) & & & Gamma \\
+Ke et al., 2018 & \( \displaystyle G_{II}^s = \frac{\alpha}{E_0} (K_{II}^s)^2 \) & & & not used \\
+Fukuyama \& Mizoguchi, 2010 & \( \displaystyle E_F = \int_{0}^{D_c} S(\Delta u) - S(D_c) \,d \Delta u \) & & & $=$ \\
+Violay et al., 2014a & "Fracture energy" = integral from slip = 0 (or Da?) to an arbitrary slip value (0.1 and 1 m) & & $**$ & $=$ \\
+Chang et al., 2012 & \( \displaystyle E_C = 0.605 \cdot D^{0.933} \) & & & not used \\
+Chang et al., 2012 & \( \displaystyle E_T = E_C \sigma_n \approx \tau D\) & & & $=$ \\
+Passelegue et al., 2016a & \( \displaystyle E_g = \frac{1}{2} (\tau_p - \tau_r) D_c \) & $J/m^2$ & & $=$ \\
+Passelegue et al., 2016a & \( \displaystyle E_h = \tau_r D \) & & & not used \\
+Passelegue et al., 2016a & \( \displaystyle E_r = \left ( \frac{1}{2} (\tau_p - \tau_f) + (\tau_f - \tau_r) \right ) D - E_g  \) & & & not used \\
+Lockner et al., 2017 & \( \displaystyle W_T = \frac{1}{2} (\tau_p - \tau_e) \Delta x \) & & & $=$ \\
+Harbord et al., 2021 & \( \displaystyle W_b = \int_{0}^{D_{min}} [\tau(D) - \tau_{min}] \,d D \) & & & $=$ \\
+Harbord et al., 2021 & \( \displaystyle W_r = \int_{D_{min}}^{D_{tot}} [\tau(D) - \tau_{min}] \,d D \) & & & not used \\
+Passelegue et al., 2016b & \( \displaystyle E_g = \int_{0}^{D_{ss}} (\tau_{(\Delta D)} - \tau_{ss}) \,d D \) & & $*$ & not used \\
+Paglialunga et al., 2022 & \( \displaystyle W_{b,tip} = \int_{0}^{D_c} (\tau(D)-\tau(D_c)) \,d D \) & & & $=$ \\
+Paglialunga et al., 2022 & \( \displaystyle W_b = \int_{0}^{D_m} (\tau(D)-\tau(D_m)) \,d D \) & & & $=$ \\
+Paglialunga et al., 2022 & \( \displaystyle G_c = \frac{1-\nu^2}{E} K_{II}^2 (C_f) f_{II} (C_f)\) & & LEFM & not used \\
+Paglialunga et al., 2022 & \( \displaystyle G_c = \frac{16(1-\nu)}{9\pi} \frac{(\tau_p-\tau_r)^2}{\mu} x_c f_{II} (C_f) \) & & CZM & not used \\
+Cornelio et al., 2020 & \( \displaystyle W_b = \int_{U_{in}}^{U_{min}} (\tau(U) - \tau_{min}) \,d U \) & & & $=$ \\
+Cornelio et al., 2020 & \( \displaystyle W_r \) & & & not used \\
+Cornelio et al., 2019 & \( \displaystyle G_c = \int_{0}^{D_c} (\tau(u) - \tau_{min}) \,d u \) & & & $=$ \\
+Passelegue et al., 2017 & \( \displaystyle G = \frac{1}{2} (\tau_s - \tau_d) D_c \) & $J/m^2$ & & $=$ \\
+Wong, 1986 & \( \displaystyle G = \int_{0}^{\infty} (\tau - \tau^f) \,d \delta = [(A-a)\sigma_n + (B-b)] \int_{0}^{\infty} f(\delta) h(\delta) \,d \delta \) & $J/m^2$ & $\sigma_n = const $ & $=$ \\
+Wong, 1986 & \( \displaystyle G_{nom}(\tau_p) = \int_{0}^{\infty} (\tau-\tau^f) \,d\delta = (\tau^p-\tau^f) \int_{0}^{\infty} h(\tau^p,\delta) \,d\delta \) & $J/m^2$ & triaxial loading & not used \\
+Wong, 1986 & \( \displaystyle \langle \delta_{nom} \rangle = \int_{0}^{\infty} h(\tau^p,\delta) \,d\delta \) & & & $=$ \\
+Wong, 1982 & \( \displaystyle W = \int_{C'}^{C} \sigma(d \epsilon_1 - d e_1) - P D \) & $J/m^3$ & & not used \\
+Wong, 1982 & \( \displaystyle \underline{G} = \int_{0}^{\Delta u^*} [\tau(\Delta u) -\tau^f] \,d(\Delta u) = (\tau^p-\tau^f) \overline{\Delta u} \) & $J/m^2$ & & G \\
+Wong, 1982 & \( \displaystyle M = 2 \Gamma (S_V - S_V^0) \) & $J/m^3$ & CD & not used \\
+Wong, 1982 & \( \displaystyle M^1 = 2 \Gamma (S_V^p - S_V^f) \cdot w \) & $J/m^2$ & CD & not used \\
+Liu \& Rummel, 1990 & \( \displaystyle G = \int_{0}^{\delta^*} (\tau - \tau_f) \,d\delta = [(A-a)\delta_n + (B-b)] \int_{0}^{\delta^*} f(\delta) h(\delta) \,d\delta \) & & $\sigma_n = const$ & $=$ \\
+Liu \& Rummel, 1990 & \( \displaystyle G_{nom}(\tau_p) = \int_{0}^{\delta^*} (\tau - \tau_f)_{nom} \,d\delta = (\tau_p-\tau_f)_{nom} \int_{0}^{\delta^*} h(\tau_p,\delta) \,d\delta \) & & triaxial loading & not used \\
+Hakami \& Stephansson, 1990 & \( \displaystyle G_{IIC} = \int_{0}^{\Delta u^*} [\tau(\Delta u) - \tau^f] \,d(\Delta u) = (\tau^p - \tau^f) \overline{\Delta u} \) & & & $=$ \\
+Ohnaka, 2003 & \( \displaystyle G_c = \int_{D_0}^{D_c} [\tau(D)-\tau_r] \,dD \) & & & $=$ \\
+Nielsen et al., 2016a & \( \displaystyle G_f(u) = \int_{0}^{u} (\tau(u') - \tau(u)) \,du' \) & & & $G_f$ \\
+Hou et al., 2012 & \( \displaystyle E_G = - \left [ \frac{\mu_p - \mu_{ss}}{ln(0.05)} \right ] D_c \sigma_n \approx 0.334 (\mu_p - \mu_{ss}) D_c \sigma_n \) & & & Wb(Dc) \\
+Hirose \& Bystricky, 2007; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+Hirose \& Bystricky, 2007; Seyler et al., 2020 & \( \displaystyle W_b\) from Seyler et al., 2020 & & & Wb(Dth) \\
+Violay et al., 2013 & fracture energy defined as the integral between the friction curve and the minimum level reached (Rice, 2006) & & ** & Wb(Dc) \\
+Togo et al., 2011b & \( \displaystyle E_G = - \left [ \frac{\mu_p - \mu_{ss}}{ln(0.05)} \right ] D_c \sigma_n \approx 0.334 (\mu_p - \mu_{ss}) D_c \sigma_n \) & & & Wb(Dc) \\
+Cornelio et al., 2019 & See above & & & Wb(Dc) \\
+Seyler et al., 2020 & \( \displaystyle E_g = \int_{0}^{D_c} (\tau_p - \tau_{ss}) e^{-\frac{\delta}{D_c}} \,d\delta \) & & ** & Wb(Dc) \\
+Seyler et al., 2020 & \( \displaystyle W_b = \int_{0}^{D_{th}} (\tau_p - \tau_{ss}) e^{-\frac{\delta}{D_{th}}} \,d\delta \) & & & Wb(Dth) \\
+Faulkner et al., 2011; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+Faulkner et al., 2011; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Ujiie \& Tsutsumi, 2010; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+Ujiie \& Tsutsumi, 2010; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Ujiie et al., 2013; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+Ujiie et al., 2013; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Oohashi et al., 2015; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+Oohashi et al., 2015; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Vannucchi et al., 2017 & \( \displaystyle E_r = E - G_f \) & & & not used \\
+Vannucchi et al., 2017 & \( \displaystyle G_{fSND} \approx G_f\) from Nielsen et al., 2016a & & & Wb(Dc) \\
+Vannucchi et al., 2017 & \( \displaystyle E = \frac{1}{2} (\tau_0 - \tau_{ss}) D \) & & & not used \\
+Vannucchi et al., 2017 & \( \displaystyle G_{fREF} \approx E_g \) from Seyler et al., 2020 & & & not used \\
+Vannucchi et al., 2017 & \( \displaystyle E_{REG} = E - G_{fREG} \) & & & not used \\
+Vannucchi et al., 2017; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Boutareaud et al., 2012 & The total fracture energy is the area under the slip-weakening curve, between the peak shear stress and the residual shear stress & & & Wb(Dc) \\
+Boutareaud et al., 2012 & The frictional heat is the work of the residual shear stress & & & not used \\
+Boutareaud et al., 2012 & The dissipated energy is the total mechanical energy (i.e. the sum of the total fracture energy and the frictional heat) & & & not used \\
+Boutareaud et al., 2012; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Aretusini et al., 2021a & \( \displaystyle G_f\) from Nielsen et al., 2016a, calculated from $\tau_p$ to $\tau(D_c)$ & & & Wb(Dc) \\
+Sawai et al., 2014 & We calculated the fracture energy at coseismic slip velocity from the area under the shear stress versus displacement curve (i.e., from $\tau_p$ to $\tau(D_c)$) & & & Wb(Dc) \\
+Sawai et al., 2014; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Togo \& Shimamoto, 2012 & Specific fracture energy (G or $E_G/S$) was calculated by integrating $(\tau-\tau_ss) = (\mu - \mu_{ss})\sigma_N$ with respect to displacement, from displacement at peak friction to the displacement at the ened of a run & $J/m^2$ & & Wb(Dc) \\
+Togo \& Shimamoto, 2012 & Total frictional work per unit fault area ($W_F/S$) was calculated by integrating $\tau = \mu \sigma_N$ with respect to displacement from displacement at peak friction to the displacement at the end of a run & $J/m^2$ & ** & Wb(Dc) \\
+Togo et al., 2016 & Specific fracture energy $E_G$ & $J/m^2$ & ** & Wb(Dc) \\
+De Paola et al., 2011 & $W_b$ & & ** & Wb(Dc) \\
+Boulton et al., 2017 & Specific fracture energy [...] calculated as the integral of the raw friction data multiplied by the applied normal stress (from slip of $\mu_p$ to $d_w$) & & & Wb(Dc) \\
+French et al., 2014; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+French et al., 2014; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Chen et al., 2017 & The breakdown work $W_b$ calculated from $\mu_{pk}$, $\mu_{ss}$ and $D_w$ determined following Togo et al., 2011 & & & Wb(Dc) \\
+Mizoguchi et al., 2007 & Integral from peak friction $\mu$ to $\mu_r$ ($D_c$) of friction data best fit & $N/m$*** & & Wb(Dc) \\
+Mizoguchi et al., 2007; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & $N/m$*** & & $=$ \\
+Sawai et al., 2012 & Integration of \( \displaystyle \mu(d) = \mu_{ss}+(\mu_p-\mu_{ss}) e^{\frac{ln(0.05) d}{D_c}} \) & N/m*** & & Wb(Dc) \\
+Sawai et al., 2012; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Brantut et al., 2008 & $G_c$ is the area under the slip-weakening curve, between the peak friction and the residual friction & & & Wb(Dc) \\
+Brantut et al., 2008 & \( \displaystyle H\) & & & not used \\
+Brantut et al., 2008 & \( \displaystyle E_{fracture}\) & & & not used \\
+Brantut et al., 2008 & \( \displaystyle E_{am}\) & & & not used \\
+Brantut et al., 2008 & \( \displaystyle E_{dhy}\) & & & not used \\
+Brantut et al., 2008 & \( \displaystyle E_{heat}\) & & & not used \\
+Brantut et al., 2008; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Togo et al., 2011b; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
+Smith et al., 2013; Di Toro et al., in prep. & Calculated by Di Toro et al., in prep & & & Wb(Dc) \\
+Rempe et al., 2017; Di Toro et al., in prep. & Calculated by Di Toro et al., in prep & & & Wb(Dc) \\
+Yao et al., 2013a & Gray area beneath the slip-weakening curve gives specific fracture energy, $E_G$, normalized with respect to the normal stress $\sigma_n$. & $N/m$*** & & Wb(Dc) \\
+Aubry et al., 2018 & \( \displaystyle E_{tot} = \frac{1}{2} (\tau_0+\tau_r) d \) & $J/m^2$ & & $=$ \\
+Aubry et al., 2018 & \( \displaystyle Q_{th} = 2 \.{q}_{t=0} t_w \sqrt{\pi \kappa t_w} \) & & & not used \\
+Lockner \& Okubo, 1983 & \( \displaystyle W_T = \frac{1}{2} (\tau_i + \tau_e) \Delta x \) & $J/m^2$ & & $=$ \\
+Lockner \& Okubo, 1983 & \( \displaystyle W_f = \tau_f u \) & & & not used \\
+Lockner \& Okubo, 1983 & \( \displaystyle H_f = \sqrt{\pi} \frac{k}{\alpha} a_T T_{(x,t)} exp \left [ - \left ( \frac{x}{a_T} \right )^2 \right ] \) & & & not used \\
+Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_c$) & $J/m^2$ & & $=$ \\
+\hline
+\end{longtable}
+
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
