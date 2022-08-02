@@ -13,28 +13,36 @@
 \geometry{a4paper, portrait, margin=1in}
 \renewcommand{\arraystretch}{2} %more spacing between rows in tabular
 
-\title{Methods for estimation of "fracture energy"}
+\title{Methods for the estimation of "fracture energy"}
 \date{July 2022}
 
 \begin{document}
 
 \maketitle
 
+\section{Geology}
+\begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
+\hline
+\textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
+
+\hline
+\end{longtable}
+
 \section{Laboratory}
 
 \begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
-Aben et al., 2020b & \(\displaystyle W_b = G_{nom} \) & & & $=$ \\
+Aben et al., 2020b & \(\displaystyle W_b = G_{nom} \) from Wong, 1986 & & & $=$ \\
 Aben et al., 2020b & \(\displaystyle \Gamma_{off} = 2 \sum_{i=1}^{n} (\rho_{i}^{frac}-\rho_{0}^{frac}) x_i \Gamma_i \) & & CD & $=$ \\
 Aben et al., 2019 & \( \displaystyle G_{off} \approx \frac{1}{2} w \overline{\sigma}_{ij} \Delta S_{ijkl} \overline{\sigma}_{kl} \) & & AWT & $=$ \\
-Aben et al., 2019 & \( \displaystyle G_c=G_{nom} \) & & & $=$ \\
+Aben et al., 2019 & \( \displaystyle G_c=G_{nom} \) from Wong, 1986 & & & $=$ \\
 Beeler et al., 2012 & \( \displaystyle G_e = \frac{1}{2} (\tau_{yield}-\tau_{sliding}) d_* \) & & & $=$ \\
 Beeler et al., 2012 & \( \displaystyle G_e^{min} = \frac{1}{2} k d_*^2 \) & $J/m^2$ & & $=$ \\
 Lockner et al., 1991 & \( \displaystyle G_t = E_f + G \) & & & $=$ \\
-Lockner et al., 1991 & \( \displaystyle G_c = G_{nom} \)& & & $=$ \\
+Lockner et al., 1991 & \( \displaystyle G_c = G_{nom} \) from Wong, 1986 & & & $=$ \\
 Lockner et al., 1991 & \( \displaystyle E_f = \tau_f \delta^* \)& & & $=$ \\
-Moore \& Lockner, 1995 & \( \displaystyle G_{II} \) & & & $=$ \\
+Moore \& Lockner, 1995 & \( \displaystyle G_{II} \) from Wong, 1986 & & & $=$ \\
 Okubo \& Dieterich, 1981 & \( \displaystyle G = \frac{1}{2} (\tau_p - \tau_r) d_r \) & & & $=$ \\
 Okubo \& Dieterich, 1984 & \( \displaystyle G = \frac{1}{2} (\tau_p - \tau_r) d_r \) & & & $=$ \\
 Svetlizky \& Fineberg, 2014 & \( \displaystyle G = \frac{1-\nu^2}{E} f_{II}(C_f) K_{II}^2 = \Gamma \) & & & Gamma \\
@@ -135,7 +143,33 @@ Lockner \& Okubo, 1983 & \( \displaystyle H_f = \sqrt{\pi} \frac{k}{\alpha} a_T 
 Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_c$) & $J/m^2$ & & $=$ \\
 \hline
 \end{longtable}
+*: Calculated in Cocco et al., in prep., using the $G_f(u)$ binned in slip.
+**: The definition of energy was not specified in the reference.
+***: The energy was converted into units of $J/m^2$ by multiplying for the total normal stress.
 
+\section{Models}
+
+\begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
+\hline
+\textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
+
+\hline
+\end{longtable}
+
+\section{Seismology}
+
+\begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
+\hline
+\textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
+All references & \( \displaystyle \delta= \frac{M_0}{\mu \pi r^2} \) & m & * & slip \\
+All references & \( \displaystyle G'= \frac{1}{2}(\Delta \tau - 2\tau_a)\delta \) & $J/m^2$ & **  & G' \\
+All references & \( \displaystyle \tau_a = \mu \frac{E_s}{M_0} \) & Pa & * & not used \\
+Viesca \& Garagash, 2015 & \( \displaystyle G^{max}=G'+(\tau_i + \Delta \tau)\delta \) & $J/m^2$ & & Gmax \\
+
+\hline
+\end{longtable}
+*: Calculated in Cocco et al., in prep.: for laboratory seismic events in Selvadurai, (2019) they used the shear modulus $\mu$ of PMMA (2.27$\cdot10^9$ Pa). For all the other seismic events, they used the shear modulus $\mu$ of granite (30$\cdot10^9$ Pa).
+**: In Cocco et al., in prep. they used for Selvadurai, (2019) laboratory seismic events the stress drop and source radius estimated with Brune model, the radiated energy obtained from P waves, and the source parameters using the omega squared model.				
 
 \bibliographystyle{apalike}
 \bibliography{references}
