@@ -183,12 +183,12 @@ CD: crack density, AWT: acoustic wave tomography, LEFM: linear elastic fracture 
 \begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
-Tinti et al., 2005b & \( \displaystyle W_b = \int_{0}^{T_b} (\bm{\tau}(t)-\bm{\tau}_{min})\cdot \bm{v}(t)\,dt \) & $J/m^2$ & & Wb \\
+Tinti et al., 2005b & \( \displaystyle W_b = \int_{0}^{T_b} (\bm{\tau}(t)-\bm{\tau}_{min})\cdot \bm{v}(t)\,dt \) & $J/m^2$ & & average Wb \\
 Tinti et al., 2005b & \( \displaystyle W_r = \int_{T_b}^{T} (\bm{\tau}(t)-\bm{\tau}_{min})\cdot \bm{v}(t)\,dt \) & $J/m^2$ & & not used \\
-Spagnuolo, 2006 & \( \displaystyle W_b = \int_{0}^{T_b} (\vec{\tau}(t)-\vec{\tau_{min}})\cdot \vec{\dot{u}}(t)\,dt \) & $J/m^2$ & & Wb \\
+Spagnuolo, 2006 & \( \displaystyle W_b = \int_{0}^{T_b} (\vec{\tau}(t)-\vec{\tau_{min}})\cdot \vec{\dot{u}}(t)\,dt \) & $J/m^2$ & & average Wb \\
 Spagnuolo, 2006 & \( \displaystyle W_R = \int_{T_b}^{T} (\vec{\tau}(t)-\vec{\tau_{min}})\cdot \vec{\dot{u}}(t)\,dt \) & $J/m^2$ & & not used \\
-Tinti et al., 2008 & $W_b$ from Tinti et al., 2005b multiplied by 2 (correction to previous paper) & $J/m^2$ & & Wb \\
-Tinti et al., 2021 & \(\displaystyle E_g = G_c = \frac{1}{2} (\tau_y-\tau_f) D_c\) & $J/m^2$ & * & avg Wb ($>$20\%) \\
+Tinti et al., 2008 & $W_b$ from Tinti et al., 2005b multiplied by 2 (correction to previous paper) & $J/m^2$ & & average Wb \\
+Tinti et al., 2021 & \(\displaystyle E_g = G_c = \frac{1}{2} (\tau_y-\tau_f) D_c\) & $J/m^2$ & * & average Wb ($>$20\%) \\
 Lambert \& Lapusta, 2020 & \( \displaystyle G = \frac{\int_{\Omega} G_{loc}(z) \,dz}{\int_{\Omega}\,dz} \) & $J/m^2$ & & average Wb \\
 Lambert \& Lapusta, 2020 & \( \displaystyle G_{loc}(z) = \int_{0}^{D_c (z)} [\tau(\delta')-\tau_{min}(z)]\,d\delta' \), with $\tau(D_c(z)) = \tau_{min}(z)$ & $J/m^2$ & & not used \\
 Guatteri et al., 2003 & median of $G_c$ across the fault plane & $J/m^2$ & & average Wb \\
@@ -200,7 +200,7 @@ Favreau \& Archuleta, 2003 & \( \displaystyle W_r^\Sigma = \int_{\Sigma} w_r^\Si
 Gallovic et al., 2019b & \( \displaystyle G_b =\frac{1}{2}(\tau_s-\tau_d)D_c  \) & $J/m^2$ & & average Wb \\
 \hline
 \end{longtable}
-Average (or mean) here means the spatial average over the fault surface. *: only for fault cells with slip larger than 20\% of average slip. **: similar results using $D_c$ and Rate and State Friction $d_c$.
+Average (or mean) here means the spatial average over the whole fault area. *: averaged over fault area with slip larger than 20\% of average slip. **: similar results using $D_c$ and Rate and State Friction $d_c$.
 
 \section{Seismology}
 
