@@ -3,14 +3,14 @@ no;Punchbowl FT;ultracataclasite;on;PD;global surface energy;2.00E+06;;;global s
 no;Punchbowl FT;subsidiary fault and damage zone;off;FD;global surface energy;7.00E+08;;;global slip;44000;;;Chester et al., 2005;Johnson et al., 2021;
 no;Punchbowl FT;both above;on + off;;surface energy per event;;70000;500000;slip per event;4.4;;;Chester et al., 2005;Johnson et al., 2021;energy limits from original data, slip (10000 events)
 1999 Chi-Chi;Chelungpu cores;MSZ (=psz);on;PD;surface energy per event;6.50E+05;;;slip per event;8.3;;;Ma et al., 2006;Johnson et al., 2021;
-1999 Chi-Chi;Chelungpu cores;MSZ (=psz);on;PD;global surface energy;4.30E+06;;;global slip;8.3;;;Ma et al., 2006;Johnson et al., 2021;
+1999 Chi-Chi;Chelungpu cores;MSZ (=psz);on;PD;global surface energy;4.30E+06;;;global slip;54.78;;;Ma et al., 2006;Johnson et al., 2021;
 no;SAF Tejon Pass;not clear (100 m pulv rocks);?;PD, BET;global surface energy;;;;global slip;160000;;;Wilson et al., 2005;Johnson et al., 2021;
 no;SAF Tejon Pass;not clear (100 m pulv rocks);?;PD, BET;surface energy per event;;2.00E+06;3.60E+06;slip per event;;16;22.85714286;Wilson et al., 2005;Johnson et al., 2021;min slip (10000 events) vs max slip (7000 events)
 1997 M 3.7;Bosman FT;psz;on;PD;surface energy per event;;3.00E+06;1.00E+07;slip per event;0.37;;;Wilson et al., 2005;Johnson et al., 2021;energy limits from original data
 yes (PST);Gole Larghe FT;psz;on;FD in grains in melt;surface energy per event;;1.00E+05;8.50E+05;slip per event;1.44;;;Pittarello et al., 2008;Johnson et al., 2021;energy limits from original data
 1997 M 3.7;Bosman FT;psz;on;PD;surface energy per event;;2.00E+06;1.00E+07;slip per event;0.37;;;Reches & Dewers, 2005;Johnson et al., 2021;energy limits from original data
 no;Norumbega FZ (Sandhill Corner SZ);dynamic damage zone;off;FD, PD;surface energy per event;;6.63E+05;1.63E+07;slip per event;NA;;;Johnson et al., 2021;Johnson et al., 2021;energy limits from original data
-1970 M 2.1;;;on;;surface energy per event;;37000;185000;slip per event;;0.05;0.06;Olgaard & Brace, 1983;Johnson et al., 2021;volumetric surf energy (3700000 J/m^3) multiplied by fault thickness (0.01 to 0.05 m)
+1970 M 2.1;;fault gouge;on;XRS, BET;surface energy per event;;37000;185000;slip per event;;0.05;0.06;Olgaard & Brace, 1983;Johnson et al., 2021;volumetric surf energy (3700000 J/m^3) multiplied by fault thickness (0.01 to 0.05 m)
 ;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;
