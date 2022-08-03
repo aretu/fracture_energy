@@ -12,6 +12,7 @@
 \usepackage{longtable}
 \geometry{a4paper, portrait, margin=1in}
 \renewcommand{\arraystretch}{2} %more spacing between rows in tabular
+\usepackage{bm}
 
 \title{Methods for the estimation of "fracture energy"}
 \date{July 2022}
@@ -24,9 +25,38 @@
 \begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
+Chester et al., 2005 & \( \displaystyle 5 S_{UC} \gamma \), with $\gamma$ = 1 $J/m^2$ (ultracataclasite) & $J/m^2$ & PD & global surface energy \\
+Chester et al., 2005 & \( \displaystyle 5(S_{SF}+S_{MF}+S_{UC}) \gamma \), with $\gamma$ = 1 $J/m^2$ (ultracataclasite and damage zone) & $J/m^2$ & PD, FD & global surface energy \\
+Chester et al., 2005 & total slip of Punchbowl fault & m & & global slip \\
+Chester et al., 2005 & global energy (ultracataclasite and damage zone) divided by 10000 events, upper and lower bound assuming during one earthquake refracturing of 50\% healed clasts requires 1/2 $\gamma$ & $J/m^2$ & & surface energy per event \\
+Chester et al., 2005 & global slip divided by 10000 events & m & & slip per event \\
+Ma et al., 2006 & \( \displaystyle  G_{MSZ} = S_{MSZ} \lambda G_c \), with $\lambda$ = 6.6 and $G_c$ = 1 $J/m^2$ & $J/m^2$ & PD & global surface energy \\
+Ma et al., 2006 & 1999 Chi-Chi earthquake slip multiplied by 6.6 events & m & & global slip \\
+Ma et al., 2006 & global surface energy divided by 6.6 events (in 2 cm MSZ) & $J/m^2$ & PD & surface energy per event \\
+Ma et al., 2006 & 1999 Chi-Chi earthquake slip & m & & slip per event \\
+Ma et al., 2006 & \( \displaystyle W_b \) & $J/m^2$ & & not used \\
+Wilson et al., 2005 & unknown (San Andreas Fault at Tejon Pass) & $J/m^2$ & * & global surface energy \\
+Wilson et al., 2005 & Total displacement (San Andreas Fault at Tejon Pass) & m & & global slip \\
+Wilson et al., 2005 & Assuming each earthquake generated a gouge zone 10  mm thick. Surface energy $=$ 10 multiplied by 80 $m^2/g$ multiplied by the specific surface energy of quartz of 1 to 1.8 $J/m^{2}$ (San Andreas Fault at Tejon Pass). & $J/m^2$ & PD, BET & surface energy per event \\
+Wilson et al., 2005 & global slip divided by 7000 or 10000 events: total thickness 70 to 100 m divided by 10 mm, the thickness of each event (San Andreas Fault at Tejon Pass) & m & & slip per event \\
+Wilson et al., 2005 & 10-30 fractures 1 mm thick times the energy per 1 mm thick gouge: 80 $m^2/g$ times specific surface energy of quartz of 1 to 1.8 $J/m^2$ (Bosman Fault) & $J/m^2$ & PD & surface energy per event \\
+Wilson et al., 2005 & Slip of 1997 Hartebeestfontein gold mine earthquake (Bosman Fault) & m & & slip per event \\
+Wilson et al., 2005 & \( \displaystyle U_f = \tau d\) & $J/m^2$ & & not used \\
+Pittarello et al., 2008 & \( \displaystyle U_s = (A_{SZ} + A_{DZ}) \gamma \) & $J/m^2$ & PD in PST grains & surface energy per event \\
+Pittarello et al., 2008 & \( \displaystyle Q = [H(1-\phi) + c_p (T_m - T_{hr})] \rho w   \) & $J/m^2$ & & not used \\
+Pittarello et al., 2008 & separation aplitic dyke crosscut by the fault & m & & slip per event \\
+Reches \& Dewers, 2005 & see Wilson et al., 2005 & $J/m^2$ & & surface energy per event \\
+Reches \& Dewers, 2005 & see Wilson et al., 2005 & m & PD & slip per event \\
+Johnson et al., 2021 & lower bound: \( \displaystyle U_s=\frac{1}{2} \left ( U_s^{garnet} V^{garnet} \right )\) with $V^{garnet}=$0.01-0.05; upper bound: \( \displaystyle U_s=\frac{1}{6} \left ( U_s^{garnet} V^{garnet} \right ) \) with $V^{garnet}=$1, $U_s^{garnet} = 3.551\,J/m^2$, $U_{sa}$ is $U_s$ integrated over fault width & $J/m^2$ & FD, PD & surface energy per event \\
+Johnson et al., 2021 & unknown & m & * & slip per event \\
+Olgaard \& Brace, 1983 & \( \displaystyle W_A = S \gamma\) & $J/m^3$ & XRS, BET & not used \\
+Olgaard \& Brace, 1983 & $W_A$ multiplied by fault thickness 0.01 or 0.05 m & $J/m^2$ & & surface energy per event \\
+Olgaard \& Brace, 1983 & average fault offset & m & & slip per event \\
 
 \hline
 \end{longtable}
+PD: particle density, FD: fracture density, BET: Brunauer, Emmett and Teller, PST: pseudotachylyte, XRS: X-Ray sedimentation.
+*: not available in the original reference.
 
 \section{Laboratory}
 
@@ -143,6 +173,7 @@ Lockner \& Okubo, 1983 & \( \displaystyle H_f = \sqrt{\pi} \frac{k}{\alpha} a_T 
 Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_c$) & $J/m^2$ & & $=$ \\
 \hline
 \end{longtable}
+CD: crack density, AWT: acoustic wave tomography, LEFM: linear elastic fracture mechanics, CZM: cohesive zone model.
 *: Calculated in Cocco et al., in prep., using the $G_f(u)$ binned in slip.
 **: The definition of energy was not specified in the reference.
 ***: The energy was converted into units of $J/m^2$ by multiplying for the total normal stress.
@@ -152,9 +183,24 @@ Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_
 \begin{longtable}{|p{4 cm}|p{8 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
-
+Tinti et al., 2005b & \( \displaystyle W_b = \int_{0}^{T_b} (\bm{\tau}(t)-\bm{\tau}_{min})\cdot \bm{v}(t)\,dt \) & $J/m^2$ & & Wb \\
+Tinti et al., 2005b & \( \displaystyle W_r = \int_{T_b}^{T} (\bm{\tau}(t)-\bm{\tau}_{min})\cdot \bm{v}(t)\,dt \) & $J/m^2$ & & not used \\
+Spagnuolo, 2006 & \( \displaystyle W_b = \int_{0}^{T_b} (\vec{\tau}(t)-\vec{\tau_{min}})\cdot \vec{\dot{u}}(t)\,dt \) & $J/m^2$ & & Wb \\
+Spagnuolo, 2006 & \( \displaystyle W_R = \int_{T_b}^{T} (\vec{\tau}(t)-\vec{\tau_{min}})\cdot \vec{\dot{u}}(t)\,dt \) & $J/m^2$ & & not used \\
+Tinti et al., 2008 & $W_b$ from Tinti et al., 2005b multiplied by 2 (correction to previous paper) & $J/m^2$ & & Wb \\
+Tinti et al., 2021 & \(\displaystyle E_g = G_c = \frac{1}{2} (\tau_y-\tau_f) D_c\) & $J/m^2$ & * & avg Wb ($>$20\%) \\
+Lambert \& Lapusta, 2020 & \( \displaystyle G = \frac{\int_{\Omega} G_{loc}(z) \,dz}{\int_{\Omega}\,dz} \) & $J/m^2$ & & average Wb \\
+Lambert \& Lapusta, 2020 & \( \displaystyle G_{loc}(z) = \int_{0}^{D_c (z)} [\tau(\delta')-\tau_{min}(z)]\,d\delta' \), with $\tau(D_c(z)) = \tau_{min}(z)$ & $J/m^2$ & & not used \\
+Guatteri et al., 2003 & median of $G_c$ across the fault plane & $J/m^2$ & & average Wb \\
+Peyrat et al., 2001 & \( \displaystyle G=\int_{0}^{D_c} [T(D)-T_f]\,dD = \frac{1}{2}(T_u-T_f)D_c \) & $J/m^2$ & & average Wb \\
+Guatteri et al., 2001 & median $G_c$ estimated from the stress-slip curve as the area beneath the weakening part & $J/m^2$ & ** & average Wb \\
+Favreau \& Archuleta, 2003 & \( \displaystyle W_e^\Sigma = \int_{\Sigma} w_e^\Sigma\,d\Sigma, w_e^\Sigma = -\frac{1}{2} \delta u^1 (\tau^1-\tau^0) \) & $J/m^2$ & & not used \\
+Favreau \& Archuleta, 2003 & \( \displaystyle W_f^\Sigma = \int_{\Sigma} w_f^\Sigma\,d\Sigma, w_f^\Sigma = \frac{1}{2} (\tau_s-\tau^y(\delta u^1)) inf(\delta u^1, D_c) \) & $J/m^2$ & & average Wb \\
+Favreau \& Archuleta, 2003 & \( \displaystyle W_r^\Sigma = \int_{\Sigma} w_r^\Sigma\,d\Sigma, w_r^\Sigma = \delta u^1 (\tau^y (\delta u^1)-\tau^1) \) & $J/m^2$ & & not used \\
+Gallovic et al., 2019b & \( \displaystyle G_b =\frac{1}{2}(\tau_s-\tau_d)D_c  \) & $J/m^2$ & & average Wb \\
 \hline
 \end{longtable}
+Average (or mean) here means the spatial average over the fault surface. *: only for fault cells with slip larger than 20\% of average slip. **: similar results using $D_c$ and Rate and State Friction $d_c$.
 
 \section{Seismology}
 
@@ -162,16 +208,15 @@ Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
 All references & \( \displaystyle \delta= \frac{M_0}{\mu \pi r^2} \) & m & * & slip \\
-All references & \( \displaystyle G'= \frac{1}{2}(\Delta \tau - 2\tau_a)\delta \) & $J/m^2$ & **  & G' \\
+All references & \( \displaystyle G'= \frac{1}{2}(\Delta \tau - 2\tau_a)\delta \) & $J/m^2$ & *  & G' \\
 All references & \( \displaystyle \tau_a = \mu \frac{E_s}{M_0} \) & Pa & * & not used \\
 Viesca \& Garagash, 2015 & \( \displaystyle G^{max}=G'+(\tau_i + \Delta \tau)\delta \) & $J/m^2$ & & Gmax \\
 
 \hline
 \end{longtable}
-*: Calculated in Cocco et al., in prep.: for laboratory seismic events in Selvadurai, (2019) they used the shear modulus $\mu$ of PMMA (2.27$\cdot10^9$ Pa). For all the other seismic events, they used the shear modulus $\mu$ of granite (30$\cdot10^9$ Pa).
-**: In Cocco et al., in prep. they used for Selvadurai, (2019) laboratory seismic events the stress drop and source radius estimated with Brune model, the radiated energy obtained from P waves, and the source parameters using the omega squared model.				
+*: Calculated in Cocco et al., in prep.: for laboratory seismic events in Selvadurai, (2019) they used the shear modulus $\mu$ of PMMA (2.27$\cdot10^9$ Pa). For all the other seismic events, they used the shear modulus $\mu$ of granite (30$\cdot10^9$ Pa). In particular they used for Selvadurai, (2019) laboratory seismic events the stress drop and source radius estimated with Brune model, the radiated energy obtained from P waves, and the source parameters using the omega squared model.				
 
-\bibliographystyle{apalike}
-\bibliography{references}
+% \bibliographystyle{apalike}
+% \bibliography{references}
 
 \end{document}
