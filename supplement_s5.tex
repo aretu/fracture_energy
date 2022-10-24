@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{physics}
 \usepackage{graphicx}
@@ -10,14 +10,16 @@
 \usepackage{amsmath}
 \usepackage{array}
 \usepackage{longtable}
+\usepackage{mathptmx}
+
 \geometry{a4paper, portrait, margin=1in}
 \renewcommand{\arraystretch}{2} %more spacing between rows in tabular
 \usepackage{bm}
-\usepackage{mathptmx}
 
 \begin{document}
-\section*{Summary tables of the methods used for the estimation of "fracture energy"}
-In this document, we report the methods for the estimation of "fracture energy" keeping when possible the original equations and symbols as in the reported reference.
+\section*{S5. Summary tables of the methods used for the estimation of "fracture energy"}
+
+In this supplemental document, we decided to report the methods for the estimation of "fracture energy" keeping when possible the original equations and symbols as in the reported reference.
 
 \section{Geology}
 \begin{longtable}{|p{3.5 cm}|p{6.5 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
@@ -57,6 +59,7 @@ PD: particle density, FD: fracture density, BET: Brunauer, Emmett and Teller, PS
 *: not available in the original reference.
 
 \section{Laboratory}
+
 \begin{longtable}{|p{3.5 cm}|p{6.5 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
@@ -144,7 +147,7 @@ Togo \& Shimamoto, 2012 & Total frictional work per unit fault area ($W_F/S$) wa
 Togo et al., 2016 & Specific fracture energy $E_G$ & $J/m^2$ & ** & Wb(Dc) \\
 De Paola et al., 2011 & $W_b$ & & ** & Wb(Dc) \\
 Boulton et al., 2017 & Specific fracture energy [...] calculated as the integral of the raw friction data multiplied by the applied normal stress (from slip of $\mu_p$ to $d_w$) & & & Wb(Dc) \\
-French et al., 2014; Seyler et al., 2020 & \( \displaystyle E_g \) from Seyler et al., 2020 & & & Wb(Dc) \\
+French et al., 2014; Seyler et al., 2020 & \( \displaystyle E_g \)  Seyler et al., 2020 & & & Wb(Dc) \\
 French et al., 2014; Seyler et al., 2020 & \( \displaystyle W_b \) from Seyler et al., 2020 & & & Wb(Dth) \\
 Chen et al., 2017 & The breakdown work $W_b$ calculated from $\mu_{pk}$, $\mu_{ss}$ and $D_w$ determined following Togo et al., 2011 & & & Wb(Dc) \\
 Mizoguchi et al., 2007 & Integral from peak friction $\mu$ to $\mu_r$ ($D_c$) of friction data best fit & $N/m$*** & & Wb(Dc) \\
@@ -171,12 +174,13 @@ Scuderi et al., 2020 & $W_b$ from $\tau_{peak}$ to $\tau_{minimum}$ (at slip $D_
 \hline
 \end{longtable}
 CD: crack density, AWT: acoustic wave tomography, LEFM: linear elastic fracture mechanics, CZM: cohesive zone model.
-*: Calculated in Cocco et al., in prep., using the $G_f(u)$ binned in slip.
+*: Re-calculated for this work, using the $G_f(u)$ binned in slip.
 **: The definition of energy was not specified in the reference.
 ***: The energy was converted into units of $J/m^2$ by multiplying for the total normal stress.
-****: Re-calculated in Cocco et al., in prep. using the original data from the reference.
+****: Re-calculated for this work using the original data from the reference.
 
 \section{Models}
+
 \begin{longtable}{|p{3.5 cm}|p{6.5 cm}|p{1.25 cm}|p{1.25 cm}|p{1.5 cm}|}
 \hline
 \textbf{Reference} & \textbf{Original definition} & \textbf{Unit} & \textbf{Note} & \textbf{Name in repository} \\ \hline
@@ -210,7 +214,7 @@ Viesca \& Garagash, 2015 & \( \displaystyle G^{max}=G'+(\tau_i + \Delta \tau)\de
 
 \hline
 \end{longtable}
-*: Calculated in Cocco et al., in prep.: for laboratory seismic events in Selvadurai, (2019) they used the shear modulus $\mu$ of PMMA (2.27$\cdot10^9$ Pa). For all the other seismic events, they used the shear modulus $\mu$ of granite (30$\cdot10^9$ Pa). In particular they used for Selvadurai, (2019) laboratory seismic events the stress drop and source radius estimated with Brune model, the radiated energy obtained from P waves, and the source parameters using the omega squared model.				
+*: Re-calculated for this work. For laboratory seismic events in Selvadurai, (2019) we used the shear modulus $\mu$ of PMMA (2.27$\cdot10^9$ Pa). For all the other seismic events, we used the shear modulus $\mu$ of granite (30$\cdot10^9$ Pa). In particular we used for Selvadurai, (2019) laboratory seismic events the stress drop and source radius estimated with Brune model, the radiated energy obtained from P waves, and the source parameters using the omega squared model.				
 
 % \bibliographystyle{apalike}
 % \bibliography{references}
